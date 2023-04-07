@@ -61,6 +61,22 @@
             var sol=Math.tan(x);
             document.getElementById("res").value=sol;
         }
+        function log()
+        {
+            var x=document.getElementById("res").value;
+            var sol=Math.log(x);
+            document.getElementById("res").value=sol;
+        } 
+        function log()
+        {
+            var x=document.getElementById("res").value;
+            var sol=Math.log10(x);
+            document.getElementById("res").value=sol;
+        } 
+        function pi()
+        {
+            document.getElementById("res").value=3.14;
+        } 
         function pow()
         {
             var x=document.getElementById("res").value;
@@ -68,35 +84,41 @@
             var sol=Math.pow(x,y);
             document.getElementById("res").value=sol;
         }
+        
         </script>
     <table border="1">
         <caption>CALCULATOR </caption>
         <tr>
             <td colspan =4><input type="text" id="res"></td>
+            <td colspan=3 id=b align="center"><botton onclick="ac()">AC</botton></td>
 
         </tr>
         <tr>
             <td id=c align="center"><botton onclick="show('1')">1</botton> </td>
             <td id=c align="center"><botton onclick="show('2')">2</botton> </td>
             <td id=c align="center"><botton onclick="show('3')">3</botton> </td>
-            <td id=d align="center"><botton onclick="show('+')">+</botton> </td>
+            <td id=c align="center"><botton onclick="sin()">sin</botton> </td>
+            <td id=d align="center"><botton onclick="show('+')"> + </botton> </td>
         </tr>
         <tr>
             <td id=c align="center"><botton onclick="show('4')">4</botton> </td>
             <td id=c align="center"><botton onclick="show('5')">5</botton> </td>
             <td id=c align="center"><botton onclick="show('6')">6</botton> </td>
+            <td id=c align="center"><botton onclick="cos()">cos</botton> </td>
             <td id=d align="center"><botton onclick="show('-')">-</botton> </td>
         </tr>
         <tr>
             <td id=c align="center"><botton onclick="show('7')">7</botton> </td>
             <td id=c align="center"><botton onclick="show('8')">8</botton> </td>
             <td id=c align="center"><botton onclick="show('9')">9</botton> </td>
+            <td id=c align="center"><botton onclick="tan()">tan</botton> </td>
             <td id=d align="center"><botton onclick="show('*')">*</botton> </td>
         </tr>
         <tr>
             <td id=c align="center"><botton onclick="show('0')">0</botton> </td>
             <td id=c align="center"><botton onclick="show('%')">%</botton> </td>
             <td id=c align="center"><botton onclick="show('/')">/</botton> </td>
+            <td id=c align="center"><botton onclick="log()">ln</botton> </td>
             <td id=d align="center"><botton onclick="cal()">=</botton> </td>
         
         </tr>
@@ -104,20 +126,18 @@
             <td id=c align="center"><botton onclick="sqr()">sqr</botton></td>
             <td id=c align="center"><botton onclick="cbr()">cbr</botton></td>
             <td id=c align="center"><botton onclick="pow()">pow</botton></td>
-            <td id=e align="center"><botton onclick="DE()">DE</botton> </td>
-
-            
-        </tr>
-        <tr>
-            <td id=c align="center"><botton onclick="sin()">sin</botton> </td>
-            <td id=c align="center"><botton onclick="cos()">cos</botton> </td>
-            <td id=c align="center"><botton onclick="tan()">tan</botton> </td>
-            <td id=c align="center"><botton onclick="show(',')">,</botton> </td>  
-    
-        </tr>
-        <tr>
+            <td id=c align="center"><botton onclick="log()">log</botton> </td>
             <td id=c align="center"><botton onclick="show('.')">.</botton> </td>
-            <td colspan=3 id=b align="center"><botton onclick="ac()">AC</botton></td>
+        </tr>
+        <tr>
+            <td id=c align="center"><botton onclick="pi()">pi</botton> </td>
+            <td id=c align="center"><botton onclick="show('(')">(</botton> </td>  
+            <td id=c align="center"><botton onclick="show(')')">)</botton> </td>
+            <td colspan=2 id=e align="center"><botton onclick="DE()">DE</botton> </td>
+            
+
+
+    
         </tr>
     </table>
 </body>
